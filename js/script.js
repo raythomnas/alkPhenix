@@ -16,439 +16,70 @@ function myFunction() {
   }                               
 }
 
-document.getElementById('myBtn').addEventListener('click', function(){
+// about section Js
+
+$("#aboutNav").click(function() {
+  $("#cart, #menuBox #shopBack",).css({
+    "display" : "none",
+  });
   window.scrollTo(0, 0);
 });
 
-var lookbook = [
-{
- name : "GalleryImg1",
- link : "gallery/images/galleryimage1.jpg",
- description : "home page gallery image man in parka and pants",
-},
-{
- name : "GalleryImg2",
- link : "gallery/images/galleryimage2.jpg",
- description : "home page gallery image man in parka and pants",
-},
-{
- name : "GalleryImg3",
- link : "gallery/images/galleryimage3.jpg",
- description : "home page gallery image man in parka",
-},
-{
- name : "GalleryImg4",
- link : "gallery/images/galleryimage4.jpg",
- description : "home page gallery image man in jacket",
-},
-{
- name : "GalleryImg5",
- link : "gallery/images/galleryimage5.jpg",
- description : "home page gallery image man in jacket, vest, shirt and pants",
-},
-{
- name : "GalleryImg6",
- link : "gallery/images/galleryimage6.jpg",
- description : "home page gallery image man in kimono and pants",
-},
-{
- name : "GalleryImg7",
- link : "gallery/images/galleryimage7.jpg",
- description : "home page gallery image man in vest, shirt and pants",
-},
-{
- name : "GalleryImg8",
- link : "gallery/images/galleryimage8.jpg",
- description : "home page gallery image man in cap, jacket and pants",
-},
-{
- name : "GalleryImg9",
- link : "gallery/images/galleryimage9.jpg",
- description : "home page gallery image man in parka and pants",
-},
-]
+//lookbook section js
+
+$("#lookBookNav").click(function() {
+  $("#cart, #menuBox #shopBack",).css({
+    "display" : "none",
+  });
+  document.getElementById('galleryDump').innerHTML = "";
+  for (i = 0; i < lookbook.length; i++) {
+    showOptions()
+  }
+  window.scrollTo(0, 0);
+});
+
+document.getElementById('myBtn').addEventListener('click', function(){
+  window.scrollTo(0, 0);
+});
 
 for (i = 0; i < lookbook.length; i++) {
   showOptions()
 }
 
-function showOptions(){
-  console.log("hello");
+function showOptions(){ 
   document.getElementById('galleryDump').innerHTML 
   +='<div class="col12">'
   +'<img src="'+ lookbook[i].link +'" alt="'+ lookbook[i].description +'" class="col12 imageborder centered gallerybox">'
   +'</div>'
 };
 
-var products = [
-{
- name : "Item",
- ImgLink : "images/new/dressshirt/dressshirt2.png",
- description : "Item",
- description2 : "",
- material : "",
- measurements : "",
- productId : "",
- Img1 : "",
- Img1Alt : "",
- Img2 : "",
- Img2Alt : "",
- Img3 : "",
- Img3Alt : "",
- Img4 : "",
- Img4Alt : "",
- sale : false,
- new : true,
- category : "shirt",
-
-},
-{
- name : "Item",
- ImgLink : "images/new/grayhoodie1/grayhoodie.png",
- description : "Item",
- description2 : "",
- material : "",
- measurements : "",
- productId : "",
- Img1 : "",
- Img1Alt : "",
- Img2 : "",
- Img2Alt : "",
- Img3 : "",
- Img3Alt : "",
- Img4 : "",
- Img4Alt : "",
- sale : false,
- new : true,
- category : "outer",
-
-},
-{
- name : "Item",
- ImgLink : "images/new/grayhoodiezips/grayhoodiezips.png",
- description : "Item",
- description2 : "",
- material : "",
- measurements : "",
- productId : "",
- Img1 : "",
- Img1Alt : "",
- Img2 : "",
- Img2Alt : "",
- Img3 : "",
- Img3Alt : "",
- Img4 : "",
- Img4Alt : "",
- sale : false,
- new : true,
- category : "outer",
-
-},
-{
- name : "Item",
- ImgLink : "images/new/graypants/graypants.png",
- description : "Item",
- description2 : "",
- material : "",
- measurements : "",
- productId : "",
- Img1 : "",
- Img1Alt : "",
- Img2 : "",
- Img2Alt : "",
- Img3 : "",
- Img3Alt : "",
- Img4 : "",
- Img4Alt : "",
- sale : false,
- new : true,
- category : "pant",
-
-},
-{
- name : "Item",
- ImgLink : "images/new/graysweatpant/graysweatpant.png",
- description : "Item",
- description2 : "",
- material : "",
- measurements : "",
- productId : "",
- Img1 : "",
- Img1Alt : "",
- Img2 : "",
- Img2Alt : "",
- Img3 : "",
- Img3Alt : "",
- Img4 : "",
- Img4Alt : "",
- sale : false,
- new : true,
- category : "pant",
-
-},
-{
- name : "Item",
- ImgLink : "images/new/graysweatpant2/graysweatpant.png",
- description : "Item",
- description2 : "",
- material : "",
- measurements : "",
- productId : "",
- Img1 : "",
- Img1Alt : "",
- Img2 : "",
- Img2Alt : "",
- Img3 : "",
- Img3Alt : "",
- Img4 : "",
- Img4Alt : "",
- sale : false,
- new : true,
- category : "pant",
-
-},
-{
- name : "Item",
- ImgLink : "images/new/kimono19/kimono.png",
- description : "Item",
- description2 : "",
- material : "",
- measurements : "",
- productId : "",
- Img1 : "",
- Img1Alt : "",
- Img2 : "",
- Img2Alt : "",
- Img3 : "",
- Img3Alt : "",
- Img4 : "",
- Img4Alt : "",
- sale : false,
- new : true,
- category : "outer",
-
-},
-{
- name : "Item",
- ImgLink : "images/new/navyjacket/navyjacket.png",
- description : "Item",
- description2 : "",
- material : "",
- measurements : "",
- productId : "",
- Img1 : "",
- Img1Alt : "",
- Img2 : "",
- Img2Alt : "",
- Img3 : "",
- Img3Alt : "",
- Img4 : "",
- Img4Alt : "",
- sale : false,
- new : true,
- category : "outer",
-
-},
-{
- name : "Item",
- ImgLink : "images/new/navypantsbaggy/navybaggy.png",
- description : "Item",
- description2 : "",
- material : "",
- measurements : "",
- productId : "",
- Img1 : "",
- Img1Alt : "",
- Img2 : "",
- Img2Alt : "",
- Img3 : "",
- Img3Alt : "",
- Img4 : "",
- Img4Alt : "",
- sale : false,
- new : true,
- category : "pant",
-
-},
-{
- name : "Item",
- ImgLink : "images/new/nylonjacket/nylonjacket.png",
- description : "Item",
- description2 : "",
- material : "",
- measurements : "",
- productId : "",
- Img1 : "",
- Img1Alt : "",
- Img2 : "",
- Img2Alt : "",
- Img3 : "",
- Img3Alt : "",
- Img4 : "",
- Img4Alt : "",
- sale : false,
- new : true,
- category : "outer",
-
-},
-{
- name : "Item",
- ImgLink : "images/new/ridgehat/ridgehat.png",
- description : "Item",
- description2 : "",
- material : "",
- measurements : "",
- productId : "",
- Img1 : "",
- Img1Alt : "",
- Img2 : "",
- Img2Alt : "",
- Img3 : "",
- Img3Alt : "",
- Img4 : "",
- Img4Alt : "",
- sale : false,
- new : true,
- category : "acc",
-
-},
-{
- name : "Item",
- ImgLink : "images/new/waistcoat/waistcoat.png",
- description : "Item",
- description2 : "",
- material : "",
- measurements : "",
- productId : "",
- Img1 : "",
- Img1Alt : "",
- Img2 : "",
- Img2Alt : "",
- Img3 : "",
- Img3Alt : "",
- Img4 : "",
- Img4Alt : "",
- sale : false,
- new : true,
- category : "outer",
-
-},
-{
- name : "Item",
- ImgLink : "images/new/windbreakerhoodie/windbreakerhoodie.png",
- description : "Item",
- description2 : "",
- material : "",
- measurements : "",
- productId : "",
- Img1 : "",
- Img1Alt : "",
- Img2 : "",
- Img2Alt : "",
- Img3 : "",
- Img3Alt : "",
- Img4 : "",
- Img4Alt : "",
- sale : false,
- new : true,
- category : "outer",
-
-},
-{
- name : "Item",
- ImgLink : "images/sale/talljacket/talljacket.png",
- description : "Item",
- description2 : "",
- material : "",
- measurements : "",
- productId : "",
- Img1 : "",
- Img1Alt : "",
- Img2 : "",
- Img2Alt : "",
- Img3 : "",
- Img3Alt : "",
- Img4 : "",
- Img4Alt : "",
- sale : true,
- new : false,
- category : "outer",
-
-},
-{
- name : "Item",
- ImgLink : "images/general/backpack/backpack0.png",
- description : "Item",
- description2 : "",
- material : "",
- measurements : "",
- productId : "",
- Img1 : "",
- Img1Alt : "",
- Img2 : "",
- Img2Alt : "",
- Img3 : "",
- Img3Alt : "",
- Img4 : "",
- Img4Alt : "",
- sale : false,
- new : false,
- category : "acc",
-
-},
-{
- name : "Item",
- ImgLink : "images/general/medbag/medbag.png",
- description : "Item",
- description2 : "",
- material : "",
- measurements : "",
- productId : "",
- Img1 : "",
- Img1Alt : "",
- Img2 : "",
- Img2Alt : "",
- Img3 : "",
- Img3Alt : "",
- Img4 : "",
- Img4Alt : "",
- sale : false,
- new : false,
- category : "acc",
-
-},
-{
- name : "Item",
- ImgLink : "images/general/lilbag/lilbag1.png",
- description : "Item",
- description2 : "",
- material : "",
- measurements : "",
- productId : "",
- Img1 : "",
- Img1Alt : "",
- Img2 : "",
- Img2Alt : "",
- Img3 : "",
- Img3Alt : "",
- Img4 : "",
- Img4Alt : "",
- sale : false,
- new : false,
- category : "acc",
-
-},
-
-]
-
-
 //activates when shop at top menu is clicked
 
 document.getElementById('shopAll').addEventListener('click', function(){
+  
+  $("#cart, #menuBox",).css({
+    "display" : "block",
+  });
   document.getElementById('galleryDump').innerHTML = ""
   for (i = 0; i < products.length; i++) {
   showProducts()
   }
+  window.scrollTo(0, 0);
+});
+
+document.getElementById('shopBack').addEventListener('click', function(){
+  
+  $("#cart, #menuBox",).css({
+    "display" : "block",
+  });
+  $("#shopBack",).css({
+    "display" : "none",
+  });
+  document.getElementById('galleryDump').innerHTML = ""
+  for (i = 0; i < products.length; i++) {
+  showProducts()
+  }
+  window.scrollTo(0, 0);
 });
 
 
@@ -566,7 +197,7 @@ document.getElementById('shopSale').addEventListener('click', function(){
 
 function showProducts(){
   document.getElementById('galleryDump').innerHTML 
-  +='<div class="bglightgray left shopitembox newitem allitem shirts" id="'+ products[i].productId +'">'
+  +='<div class="bglightgray left shopitembox newitem allitem shirts" onclick="singleProduct(this.id)" id="'+ products[i].productId +'">'
   +'<div class="col11 centered gallerybox">'
   +'<img src="'+ products[i].ImgLink +'" alt="alkjacket" class="col12 imageborder bggray itemphoto centered">'
   +'</div>'
@@ -574,6 +205,88 @@ function showProducts(){
   +'<p>'+ products[i].name +'</p></a>'
   +'</div>'
   +'</div>'
+};
+
+// testing for item page
+
+function singleProduct(clicked_id){
+  document.getElementById('galleryDump').innerHTML = ""
+  var product = clicked_id;
+  console.log(product);
+    $("#shopBack",).css({
+    "display" : "block",
+  });
+  for (i = 0; i < products.length; i++) {
+    if (products[i].productId === product) {
+      document.getElementById('galleryDump').innerHTML 
+      +='<div class="col9 centered">'
+      +'<h3 class="centeredtext">'+ products[i].name +'</h3>'
+      +'<br>'
+      +'</div>'
+      +'<div class="col9 centered homegallery">'
+      +'<div class="col12 homegallery centered mainitemboxing">'
+      +'<div class="col12 itemmainphoto homegallery left">'
+      +'<img src="'+ products[i].ImgLink +'" class="col12 bggray imageborder">'
+      +'</div>'
+      +'<div class="itemdescriptionbox homegallery"> '
+      +'<p>'+ products[i].description +'</p>'
+      +'<br>'
+      +'<p>'+ products[i].description2 +'</p>'
+      +'<br>'
+      +'<p>'+ products[i].material +'</p>'
+      +'<br>'
+      +'<p>'+ products[i].measurements +'</p>'
+      +'<br>'
+      +'<div class="col12">'
+      +'<div class="col4 left">'
+      +'<p>$'+ products[i].price +'</p>'
+      +'<br>'
+      +'</div>'
+      +'<div class="col4 left">'
+      +'<p>Sizes</p>'
+      +'<form action="/action_page.php" class="col12">'
+      +'<select name="size">'
+      +'<option value="xs">Extra-Small</option>'
+      +'<option value="s">Small</option>'
+      +'<option value="m" selected>Medium</option>'
+      +'<option value="l">Large</option>'
+      +'<option value="xl">Extra-Large</option>'
+      +'</select>'
+      +'</form>'
+      +'</div>'
+      +'<div class="col4 left">'
+      +'<p>number</p>'
+      +'<form action="/action_page.php" class="col12">'
+      +'<select name="size">'
+      +'<option value="1" selected>1</option>'
+      +'<option value="2">2</option>'
+      +'<option value="3">3</option>'
+      +'<option value="4">4</option>'
+      +'<option value="4">5</option>'
+      +'</select>'
+      +'</form>'
+      +'</div>'
+      +'</div>'
+      +'<p class="col12 left addCart"> add to cart </p>'
+      +'</div>'
+      +'</div>'
+      +'<br>'
+      +'<div class="col12 left homegallery itemotherphotos">'
+      +'<img src="'+ products[i].Img1 +'" class="col12 bggray imageborder">'
+      +'</div>'
+      +'<div class="col12 right homegallery toppaddingonly itemotherphotos">'
+      +'<img src="'+ products[i].Img2 +'" class="col12 bggray imageborder">'
+      +'</div>'
+      +'<div class="col12 left homegallery toppaddingonly itemotherphotos">'
+      +'<img src="'+ products[i].Img3 +'" class="col12 bggray imageborder">'
+      +'</div>'
+      +'<div class="col12 right homegallery toppaddingonly itemotherphotos">'
+      +'<img src="'+ products[i].Img4 +'" class="col12 bggray imageborder">'
+      +'</div>'
+      +'</div>'
+    }
+  }
+  window.scrollTo(0, 0);
 };
 
 

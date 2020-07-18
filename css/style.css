@@ -1,5 +1,5 @@
 body {
-  background-color:#f5fafb;
+  background-color: #f5fafb;
   margin-top: 0px;
   margin-left: 0px;
   margin-right: 0px;
@@ -11,86 +11,91 @@ html, div {
 }
 
 p {
-  font-family: 'Catamaran', sans-serif;
+  font-family: "Catamaran", sans-serif;
   font-size: 14px;
   font-weight: 300;
-} 
+}
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 li {
-   font-family: 'Catamaran', sans-serif;
+  font-family: "Catamaran", sans-serif;
   font-weight: 100;
   margin: 0px;
-
 }
 
 * {
   padding: none;
   margin: none;
 }
+
 h1 {
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
   font-size: 25px;
+  margin: 0;
 }
 
 h2 {
-  font-family: 'Catamaran', sans-serif;
+  font-family: "Catamaran", sans-serif;
   font-size: 14px;
   word-spacing: 40px;
   font-weight: 300;
-} 
+}
 
 h3 {
-  font-family: 'Catamaran', sans-serif;
+  font-family: "Catamaran", sans-serif;
   font-weight: 100;
   margin: 0px;
   font-size: 14px;
-} 
-
+}
 
 .dropdown > a {
-   font-family: 'Catamaran', sans-serif;
+  font-family: "Catamaran", sans-serif;
   font-weight: 100;
   margin: 0px;
 }
-/*hover effects*/
 
+/*hover effects*/
 a:visited {
   color: black;
 }
 
 a:link {
   color: black;
-  text-decoration-line: none;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }
 
 a:hover {
-  color:#d97023;
+  color: #d97023;
 }
 
 #myBtn:hover {
-    color:#d97023;
-    cursor: pointer; 
+  color: #d97023;
+  cursor: pointer;
 }
 
 .dropdown p:hover {
   color: #d97023;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .dropdown-content p:hover {
-   color:#d97023;
-   cursor: pointer; 
+  color: #d97023;
+  cursor: pointer;
+}
+
+.addCart {
+  border-bottom: solid 1px black;
 }
 
 /*padding*/
-
 .topmargin {
   margin-top: 25px;
 }
+
 .bottommargin {
   margin-bottom: 25px;
 }
@@ -105,21 +110,17 @@ a:hover {
 
 .toppaddingonly {
   padding-top: 30px;
-
 }
 
 .leftpaddingonly {
   padding-left: 10px;
-
 }
 
 .rightpaddingonly {
   padding-right: 10px;
-
 }
 
 /*Boxes*/
-
 .maxheight {
   height: 100%;
 }
@@ -135,6 +136,14 @@ a:hover {
   text-align: right;
   position: fixed;
   top: 50%;
+  margin-top: -50px;
+}
+
+.returnbox {
+  max-height: 100px;
+  text-align: right;
+  position: fixed;
+  top: 40%;
   margin-top: -50px;
 }
 
@@ -179,24 +188,31 @@ a:hover {
 
 .itemphoto {
   height: auto;
-
 }
 
 .imageborder {
-    border-style: solid;
-  border-color: #263a1f; 
+  border-style: solid;
+  border-color: #263a1f;
   border-width: 4px;
   box-shadow: 1px 1px 10px gray;
 }
 
 .headerlogo {
- position: relative;
-width: 50px;
-height: auto;
-top: -110px;
-left: 50%;
-margin-left: -25px;
-opacity: 0.5;
+  position: relative;
+  width: 50px;
+  height: auto;
+  top: -110px;
+  left: 50%;
+  margin-left: -25px;
+  opacity: 0.5;
+}
+
+.topNavMenu {
+  display: flex;
+  justify-content: center;
+}
+.topNavMenu h2 {
+  padding: 0 1rem 0 1rem;
 }
 
 .homepageimgbox {
@@ -255,17 +271,12 @@ opacity: 0.5;
   height: auto;
 }
 
-
-
-
 /*alighnment*/
-
 .fixed {
   position: fixed;
 }
 
 .sticky {
-  position: -webkit-sticky;
   position: sticky;
 }
 
@@ -278,90 +289,85 @@ opacity: 0.5;
 }
 
 .left {
-  float:left;
+  float: left;
 }
 
 .right {
-  float:right;
+  float: right;
 }
 
 .centered {
   margin: 0 auto;
 }
 
-
 /*Columns*/
-
-
-
-.col1{
-  width:8.33%;
+.col1 {
+  width: 8.33%;
 }
 
-.col2{
+.col2 {
   width: 16.66%;
 }
 
-.col3{
+.col3 {
   width: 25%;
 }
 
-.col4{
+.col4 {
   width: 33.33%;
 }
 
-.col5{
+.col5 {
   width: 41.65%;
 }
 
-.col6{
+.col6 {
   width: 50%;
 }
 
-.col7{
+.col7 {
   width: 58.33%;
 }
 
-.col8{
+.col8 {
   width: 66.66%;
 }
 
-.col9{
+.col9 {
   width: 74.99%;
 }
 
-.col10{
+.col10 {
   width: 83.32%;
 }
 
-.col11{
-  width: 91.65%; 
+.col11 {
+  width: 91.65%;
 }
 
-.col12{
+.col12 {
   width: 100%;
 }
 
 /*colours*/
-
 .lightgray {
-	color:#f5fafb;
+  color: #f5fafb;
 }
 
 .gray {
-	color:#c9cdd1;
+  color: #c9cdd1;
 }
 
 .green {
-	color:#263a1f;
+  color: #263a1f;
 }
 
 .navy {
-	color:#30454e;
+  color: #30454e;
 }
 
 .orange {
-	color:#d97023;
+  color: #d97023;
 }
 
 .black {
@@ -369,39 +375,40 @@ opacity: 0.5;
 }
 
 .bglightgray {
-  background-color:#f5fafb;
+  background-color: #f5fafb;
 }
 
 .bggray {
-  background-color:#c9cdd1;
+  background-color: #c9cdd1;
 }
 
 .bggreen {
-  background-color:#263a1f;
+  background-color: #263a1f;
 }
 
 .bgnavy {
-  background-color:#30454e;
+  background-color: #30454e;
 }
 
 .bgorange {
-  background-color:#d97023;
+  background-color: #d97023;
 }
 
 .bgblack {
   background-color: black;
 }
- 
+
 .bgfadeoff {
-background-image: linear-gradient(to top, rgba(255,0,0,0),  #f5fafb 30%); /* Standard syntax (must be last) */
+  background-image: linear-gradient(to top, rgba(255, 0, 0, 0), #f5fafb 30%);
+  /* Standard syntax (must be last) */
 }
 
 .bgfadeoffup {
-background-image: linear-gradient(to bottom, rgba(255,0,0,0), #f5fafb 33%); /* Standard syntax (must be last) */
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), #f5fafb 33%);
+  /* Standard syntax (must be last) */
 }
 
 /*z-index*/
-
 .textontop {
   position: relative;
   z-index: 2;
@@ -419,12 +426,11 @@ background-image: linear-gradient(to bottom, rgba(255,0,0,0), #f5fafb 33%); /* S
   z-index: 1;
 }
 
-.bottom{
+.bottom {
   z-index: -1;
 }
 
 /*java*/
-
 .invisible {
   visibility: hidden;
 }
@@ -434,8 +440,6 @@ background-image: linear-gradient(to bottom, rgba(255,0,0,0), #f5fafb 33%); /* S
 }
 
 /*javeshop*/
-
-
 .seeme {
   display: block;
   visibility: visible;
@@ -446,8 +450,11 @@ background-image: linear-gradient(to bottom, rgba(255,0,0,0), #f5fafb 33%); /* S
   visibility: hidden;
 }
 
-/*sidemenu*/
+.hidden {
+  display: none;
+}
 
+/*sidemenu*/
 .dropdown {
   position: relative;
   display: inline-block;
@@ -461,18 +468,17 @@ background-image: linear-gradient(to bottom, rgba(255,0,0,0), #f5fafb 33%); /* S
   text-align: center;
 }
 
-
-
 #allDropdown:hover .dropdown-content {
-  display:block;
-}
-#newDropdown:hover .dropdown-content {
-  display:block;
-}
-#saleDropdown:hover .dropdown-content {
-  display:block;
+  display: block;
 }
 
+#newDropdown:hover .dropdown-content {
+  display: block;
+}
+
+#saleDropdown:hover .dropdown-content {
+  display: block;
+}
 
 .dropbtninfo {
   color: black;
@@ -506,9 +512,13 @@ background-image: linear-gradient(to bottom, rgba(255,0,0,0), #f5fafb 33%); /* S
   display: block;
 }
 
-.dropdowninfo a:hover {background-color: #ddd;}
+.dropdowninfo a:hover {
+  background-color: #ddd;
+}
 
-.showinfo {display: block;}
+.showinfo {
+  display: block;
+}
 
 #myBtn {
   display: none;
@@ -516,12 +526,10 @@ background-image: linear-gradient(to bottom, rgba(255,0,0,0), #f5fafb 33%); /* S
   bottom: 3rem;
   right: 1.5rem;
   z-index: 50;
-
 }
 
 /*Responsive*/
 /*shoppages*/
-
 .gallerybox {
   display: block;
   position: relative;
@@ -529,64 +537,55 @@ background-image: linear-gradient(to bottom, rgba(255,0,0,0), #f5fafb 33%); /* S
 }
 
 @media screen and (max-width: 1200px) {
-   .shopitembox  {
+  .shopitembox {
     width: 45%;
   }
-
 }
-
 @media screen and (max-width: 400px) {
-   .shopitembox  {
+  .shopitembox {
     width: 100%;
   }
-
 }
-
 /*itempage*/
 @media only screen and (min-width: 1201px) {
-   .itemotherphotos {
+  .itemotherphotos {
     width: 45%;
     height: auto;
     padding-top: 0px;
     margin: 0 auto;
-   }
+  }
 
-   .itemmainphoto {
+  .itemmainphoto {
     width: 45%;
     height: auto;
     float: left;
-   }
+  }
 
-   .itemdescriptionbox {
+  .itemdescriptionbox {
     width: 47%;
     float: right;
     z-index: 2;
-   }
-    .mainitemboxing {
+  }
+
+  .mainitemboxing {
     height: 680px;
-    }
-    .cartitem {
-      text-align: right;
-      width: 50%;
-     height: 400px;
-     float: left;
-    }
+  }
 
-    .cartsummary {
-      text-align: right;
-    }
+  .cartitem {
+    text-align: right;
+    width: 50%;
+    height: 400px;
+    float: left;
+  }
 
+  .cartsummary {
+    text-align: right;
+  }
 }
-
-
-
-
-
 /*Gallery page*/
-
-   @media only screen and (min-width: 1001px) {
-   .gallerybox {
+@media only screen and (min-width: 1001px) {
+  .gallerybox {
     max-width: 700px;
     height: auto;
-   }
+  }
 }

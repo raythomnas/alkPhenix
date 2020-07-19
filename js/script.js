@@ -19,16 +19,21 @@ function myFunction() {
 // about section Js
 
 $("#aboutNav").click(function() {
-  $("#cart, #menuBox #shopBack",).css({
+  $("#cart, #menuBox, #shopBack, #lookBookTitle",).css({
     "display" : "none",
   });
   window.scrollTo(0, 0);
+  document.getElementById('galleryDump').innerHTML = "";
+  showAbout();
 });
 
 //lookbook section js
 
 $("#lookBookNav").click(function() {
-  $("#cart, #menuBox #shopBack",).css({
+  $("#lookBookTitle",).css({
+    "display" : "block",
+  });
+  $("#cart, #menuBox, #shopBack",).css({
     "display" : "none",
   });
   document.getElementById('galleryDump').innerHTML = "";

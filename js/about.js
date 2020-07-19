@@ -49,7 +49,7 @@ window.onclick = function(event) {
 
 function showAbout(){
   document.getElementById('galleryDump').innerHTML 
-+'<div class="col9 centered">'
++='<div class="col9 centered">'
 +'  <h3 class="centeredtext" id="topofpage">ABOUT US</h3>'
 +'</div>'
 +'<div class="col9 centered gallerybox">'
@@ -140,8 +140,8 @@ function showAbout(){
 +'    <br>'
 +'    <h3>Follow us here</h3>'
 +'    <br>'
-+'    <i style="font-size:24px" class="fab"><a href="https://www.facebook.com/alk-phenix-586742861429189/" target="_blank">  &#xf09a; </a></i>'
-+'    <i style="font-size:24px" class="fab" ><a href="https://www.instagram.com/alk_phenix/" target="_blank">  &#xf16d;</a></i>  '
++'    <i style="font-size:24px" class="fa"><a href="https://www.facebook.com/alk-phenix-586742861429189/" target="_blank">  &#xf09a;</a></i>'
++'    <i style="font-size:24px" class="fa" ><a href="https://www.instagram.com/alk_phenix/" target="_blank">  &#xf16d;</a></i>  '
 +'  </div>'
 +'</div>'
 

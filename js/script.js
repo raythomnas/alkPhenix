@@ -43,9 +43,13 @@ $("#lookBookNav").click(function() {
   window.scrollTo(0, 0);
 });
 
+//Return to top button
+
 document.getElementById('myBtn').addEventListener('click', function(){
   window.scrollTo(0, 0);
 });
+
+//lookbook 
 
 for (i = 0; i < lookbook.length; i++) {
   showOptions()
@@ -199,7 +203,6 @@ document.getElementById('shopSale').addEventListener('click', function(){
   }
 });
 
-
 function showProducts(){
   document.getElementById('galleryDump').innerHTML 
   +='<div class="bglightgray left shopitembox newitem allitem shirts" onclick="singleProduct(this.id)" id="'+ products[i].productId +'">'
@@ -212,7 +215,11 @@ function showProducts(){
   +'</div>'
 };
 
-// testing for item page
+// item page
+
+var cost = 0;
+var prod = "";
+var total = "";
 
 function singleProduct(clicked_id){
   document.getElementById('galleryDump').innerHTML = ""
@@ -262,7 +269,7 @@ function singleProduct(clicked_id){
       +'<div class="col4 left">'
       +'<p>number</p>'
       +'<form action="/action_page.php" class="col12">'
-      +'<select name="size">'
+      +'<select name="number" id="productNum">'
       +'<option value="1" selected>1</option>'
       +'<option value="2">2</option>'
       +'<option value="3">3</option>'
@@ -272,7 +279,7 @@ function singleProduct(clicked_id){
       +'</form>'
       +'</div>'
       +'</div>'
-      +'<p class="col12 left addCart"> add to cart </p>'
+      +'<p class="col12 left addCart" onclick="addToCart()"> add to cart </p>'
       +'</div>'
       +'</div>'
       +'<br>'
@@ -289,9 +296,41 @@ function singleProduct(clicked_id){
       +'<img src="'+ products[i].Img4 +'" class="col12 bggray imageborder">'
       +'</div>'
       +'</div>'
+      cost = products[i].price;
+      prod = products[i].productId;
     }
   }
   window.scrollTo(0, 0);
 };
 
+// add item to cart
 
+function clearCartVars() {
+  var cost = 0;
+  var prod = "";
+}
+
+var cartClicks = 0;
+var cartObj = {}; 
+
+function addToCart(){
+  var cartClicks = (cartClicks + 1);
+  var n = document.getElementById("productNum");
+  var nTotal= n.options[n.selectedIndex].value;
+  var total = (nTotal * cost);
+  // var prodN = (prod + cartClicks);
+  console.log(cartClicks);
+  cartObj['prod' + cartClicks] = prod;
+  console.log(cartObj);
+  clearCartVars();
+}
+
+// function addToCart(){
+//   var n = document.getElementById("productNum");
+//   var nTotal= n.options[n.selectedIndex].value;
+//   var total = (nTotal * cost);
+//   sessionStorage.setItem('product', prod);
+//   sessionStorage.setItem('cost', total);
+//   console.log(sessionStorage);
+//   clearCartVars();
+// }

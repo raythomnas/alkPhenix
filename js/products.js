@@ -108,7 +108,7 @@ var products = [
  sale : false,
  new : true,
  category : "outer",
- price : 140,
+ price : 180,
 },
 {
  name : "Crank samue pants ",

@@ -1,15 +1,14 @@
 
 function newCart(){
-
 	document.getElementById('galleryDump').innerHTML 
 	+='<div class="col9 centered">'
 	+'<div class="col12 centered gallerybox">'
 	+'<div class="col12 centeredtext">'
-	+'<p>Kimono</p>'
+	+'<p>Notch hanten</p>'
 	+'<br>'
 	+'</div>'
 	+'<div class="col12 centered cartitem">'
-	+'<img src="../shop/images/new/kimono19/kimono.png" alt="kimono" class="col12 imageborder">'
+	+'<img src="images/new/kimono19/kimono.png" alt="kimono" class="col12 imageborder">'
 	+'</div>'
 	+'<div class="col12 centeredtext cartitem">'
 	+'<p>Large<br>1<br>$120<br>Remove<br></p>'
@@ -18,24 +17,28 @@ function newCart(){
 	+'<div class="col12 centered gallerybox">'
 	+'<div class="col12 centeredtext">'
 	+'<hr>'
-	+'<p>Over Coat</p>'
+	+'<p>Crank coat</p>'
 	+'<br>'
 	+'</div>'
 	+'<div class="col12 centered cartitem">'
-	+'<img src="../shop/images/new/navyjacket/navyjacket.png" alt="kimono" class="col12 imageborder">'
+	+'<img src="images/new/navyjacket/navyjacket.png" alt="navy jacket" class="col12 imageborder">'
 	+'</div>'
 	+'<div class="col12 centeredtext cartitem">'
-	+'<p>Large<br>1<br>$200<br>Remove<br></p>'
+	+'<p>Large<br>1<br>$180<br>Remove<br></p>'
 	+'</div>	'
 	+'</div>'
 	+'<div class="col12 centered gallerybox">'
 	+'<div class="col12 centeredtext cartsummary">'
 	+'<hr>'
-	+'<p>$350 <br> </p>'
-	+'<a href="../shop/shop.html">RETURN TO SHOP</a> '
+	+'<p>$300 <br> </p>'
 	+'<br>	'
-	+'<a href="">CHECKOUT</a> '
+	+'<p href="" id="checkOutButton">CHECKOUT</p> '
 	+'<br>'
 	+'</div>'
 	+'</div>'
+
+	document.getElementById('checkOutButton').addEventListener('click', function(){
+  	alert('checkout function to come :)');
+});
+
 };
